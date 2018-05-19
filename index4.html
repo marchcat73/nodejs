@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScrypt - ООП Массивы</title>
+		<script>
+     
+      function summ() {
+      var arr = new Array (2, 3, 56, 12, 23, 590, 123, 2);
+      var text = "boo";
+      text = "Длина массива - " + arr.length;
+      text += "<br>Массив состоит из " + arr.join(", ");
+      text += "<br>Сортированный массив " + (arr.sort()).join(", ");
+      
+      document.getElementById("summ_c").innerHTML = text;
+    }
+    </script>
+    
+		
+	</head>
+	<body onload="summ()";>
+    <span id="summ_c"></span>
+    
+    
+    
+	</body>
+</html>

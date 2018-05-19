@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScrypt - Таймеры</title>
+		<script>
+			//var id = setInterval("myFunct_1()", 1000);
+      var sec = -1;
+    /*
+      function myFunct_1 () {
+        counter++;
+        alert("Прошло секунд - " + counter);
+
+      }
+		*/
+      function timer() {
+        sec++;
+        document.getElementById("count").innerHTML = sec;
+        setTimeout(timer(), 1000);
+        
+      }
+
+      
+		</script>
+		
+	</head>
+	<body onload="timer()";>
+		<span id="count">-1</span>
+    
+	</body>
+</html>

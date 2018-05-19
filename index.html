@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScrypt</title>
+	</head>
+	<body>
+		<script>
+			document.write("Hello World!");
+			document.write("<br>");
+			document.write("<br>Математические операции<br>");
+			document.write("<br>");
+		</script>
+		<script>
+			var x = 5;
+			var y;
+			var result;
+			y = 5;
+			result = x + y;
+			document.write(result + "<br>");
+			result++;
+			document.write(result + "<br>");
+			result--;
+			document.write(result + "<br>");
+			result *= x;
+			document.write(result + "<br>");
+			document.write(x + " + " + y + " = " + (x + y) + "<br>");
+
+			var str_1 = "12";
+			var str_2 = Number("24");
+			document.write(Number(str_1) + str_2);
+			document.write("<br>");
+			var bool;
+			var z = 6;
+			var d = 7;
+			bool = z < d;
+			document.write(bool);
+			document.write("<br>");
+			document.write(10 + " % " + 7 + " = " + (10 % 7)); //для циклов
+		</script>
+		<script>	
+			document.write("<br>");			
+			document.write("<br>Условные операторы<br>");
+			document.write("<br>");
+			var x = 6;
+			var y = 5;
+			var bool = false;
+			if (x != y) {
+				document.write("x не равно y");
+			}
+			document.write("<br>");
+			if (x > y || bool == true) //&& - логическое И, || - логическое ИЛИ
+				document.write("x > y");
+			else if (x == y)
+				document.write("x = y");
+			else
+				document.write("x < y");
+			document.write("<br>");
+
+			var result = 5;
+			switch(result) {
+				case 1: document.write("result = 1"); break;
+				case 2: document.write("result = 2"); break;
+				case 3: document.write("result = 3"); break;
+				case 4: document.write("result = 4"); break;
+				default: document.write("result > 4");
+			}
+			document.write("<br>");
+			x >= y ? document.write("YES") : document.write("No");
+		</script>
+		<script>
+			document.write("<br>");			
+			document.write("<br>Циклы<br>");
+			document.write("<br>");
+
+			var i;
+			for(i = 0; i < 10; i++) {
+				if (i % 3 == 0 && i != 0) continue;
+				if (i==8) break;
+				document.write(i + "<br>");
+			}
+			document.write("<br>");
+			var x = 0;
+			while (x < 10) {
+				document.write(x + "<br>");
+				x += 2;
+				
+			}
+			document.write("<br>");
+			y = 1000;
+			do {
+				document.write("Цикл сработал");
+			} while(y < 100);
+		</script>
+		<script>
+			document.write("<br>");			
+			document.write("<br>Методы alert, confirm, promt<br>");
+			document.write("<br>");
+
+			var person;
+			
+			/*
+			if (confirm("Вы уверены?")) {
+				person = prompt("Как ваше имя?");
+				alert("Hello, " + person);
+			} else
+			alert("Не уверен");
+			*/
+		</script>
+		<script>
+			document.write("<br>");			
+			document.write("<br>Массивы, перебор массива<br>");
+			document.write("<br>");
+
+			var arr = new Array("str", 1.23, 7, false);
+			document.write(arr[0] + " и " + arr[2]);
+			document.write("<br>");
+			for(var i = 0; i < arr.length; i++) {
+				document.write(arr[i] + "<br>");
+			}
+			arr = new Array();
+			for(i = 0; i < 10; i++) {
+				arr[i] = i * 3;
+				document.write(arr[i] + "<br>");
+			}
+			var summ = 0;
+			for (i = 0; i < arr.length; i++) {
+				summ += arr[i];				
+			}
+			document.write("Сумма равна " + summ);
+			document.write("<br>");
+			document.write("Среднее арифметическое " + (summ / arr.length));
+				
+		</script>
+	</body>
+</html>

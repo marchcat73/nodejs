@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScrypt - ООП математические функции и дата</title>
+		<script>
+      function summ() {
+      var text = "Число Pi " + Math.PI;
+      text += "<br>Число Е " + Math.E;
+      text += "<br>Модуль -7 " + Math.abs(-7);
+      text += "<br>Синус 0.3 радиан " + Math.sin(0.3);
+      text += "<br>Случайное число от 0 до 10 - " + Math.floor(Math.random() * 11); //от 0 до 100 - умножаем на 101
+      document.getElementById("math_c").innerHTML = text;
+
+     // Math.floor(5.999999); //округляет до наименьшего
+     // Math.cell(5.000001); //округляет до наибольшего
+    }
+    </script>
+    <script>
+      function date_c() {
+      var date = new Date();
+      var data_txt;
+      data_txt = "Год сейчас - " + date.getFullYear();
+      data_txt += "<br>месяц - " + date.getMonth();
+      data_txt += "<br>день - " + date.getDate();
+      data_txt += "<br>часов - " + date.getHours();
+      data_txt += "<br>минут - " + date.getMinutes();
+      data_txt += "<br>секунд - " + date.getSeconds();
+
+      document.getElementById("date_c").innerHTML = data_txt;
+      
+    }
+    </script>
+		
+	</head>
+	<body onload="date_c()">
+    <span id="math_c"></span>
+    
+    <span id="date_c"></span>
+    
+	</body>
+</html>
