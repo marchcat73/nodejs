@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>#5 — Числа.</title>
+		
+    
+		
+	</head>
+	<body>
+    
+    <script>
+var number = 234.700,
+n = NaN,
+inf = Infinity;
+ 
+//основные методы
+console.log( number.toFixed(2) );
+console.log( number.toExponential() );
+console.log( number.toPrecision(4) );
+console.log( typeof number.toString() );
+ 
+//методы и свойства объекта Math
+console.log( Math.sqrt(81) );
+console.log( Math.pow(5, 2) );
+console.log( Math.floor(number) );
+console.log( Math.ceil(number) );
+console.log( Math.round(number) );
+console.log( Math.PI );
+ 
+//NaN
+console.log( NaN === NaN );
+console.log( isNaN(number) );
+ 
+//Infinity
+console.log( 1/0 );
+console.log( -1/0 );
+console.log( inf > 33634 );
+console.log( inf + 33634 );
+    </script>
+    
+    
+	</body>
+</html>
